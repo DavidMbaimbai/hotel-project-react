@@ -25,13 +25,13 @@ public class RoomResponse {
 
     public RoomResponse(Long id, String roomType,
                         BigDecimal roomPrice,
-                        boolean isBooked, Blob photo,
+                        boolean isBooked, byte[] photoBytes,
                         List<BookingResponse> bookings) {
         this.id = id;
         this.roomType = roomType;
         this.roomPrice = roomPrice;
         this.isBooked = isBooked;
-        this.photo = photo;
+        this.photo = photoBytes != null ? ;
         this.bookings = bookings;
     }
 }
