@@ -8,11 +8,11 @@
 		<version>3.1.4</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.dailycodework</groupId>
-	<artifactId>lakeSide-hotel</artifactId>
+	<groupId>com.davymbaimbai</groupId>
+	<artifactId>zimSide-hotel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lakeSide-hotel</name>
-	<description>lakeSide-hotel</description>
+	<name>zimSide-hotel</name>
+	<description>zimSide-hotel</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
