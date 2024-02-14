@@ -3,6 +3,7 @@ package com.davymbaimbai.zimhotel.service;
 import com.davymbaimbai.zimhotel.model.Room;
 import com.davymbaimbai.zimhotel.repository.RoomRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.sql.rowset.serial.SerialBlob;
@@ -10,7 +11,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.sql.Blob;
 import java.sql.SQLException;
-
+@Service
 @RequiredArgsConstructor
 public class RoomServiceImpl implements RoomService{
 
@@ -26,6 +27,7 @@ public class RoomServiceImpl implements RoomService{
         if (!file.isEmpty()){
             byte[] photoBytes = file.getBytes();
             Blob photoBlob = new SerialBlob(photoBytes);
+            room.setPhoto(photoBlob);
         }
         return repository.save(room);
     }
